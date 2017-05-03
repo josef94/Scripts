@@ -5,7 +5,7 @@ Name=eduroam
 EAP=peap
 Phase2=MSCHAPV2
 Identity=jboeckle@ntb.ch
-Passphrase=pga888
+Passphrase=
 
 EOF
 
@@ -19,5 +19,3 @@ connmanctl
 
 sudo wpa_action wlan0 reload
 
-# Kommentar
-# new Com installGCC6 installOpenCV README.md unintallProg
