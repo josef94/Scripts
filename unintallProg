@@ -1,0 +1,9 @@
+sudo apt-get --purge remove pytho*
+sudo apt-get --purge remove bonescript
+sudo apt-get --purge remove pulseaudi*
+sudo apt-get --purge remove bzip*
+sudo apt-get --purge remove doc-*
+sudo apt-get --purge remove gzip
+sudo apt-get --purge remove vi*
+
+# Kommentar

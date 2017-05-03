@@ -1,0 +1,13 @@
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+cd ../
+git clone https://github.com/josef94/opencv.git
+cd opencv/build
+chmod +x buildOpenCV
+./buildOpenCV
+
+make -j8	#runs 8 jobs in parallel
+sudo make install
+
+
+# Kommentar

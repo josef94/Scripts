@@ -1,0 +1,9 @@
+mv /etc/apt/sources.list /etc/apt/sources_jessie.list
+mv /etc/apt/sources_stretch.list /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install gcc-6 g++-6
+mv /etc/apt/sources.list /etc/apt/sources_stretch.list
+mv /etc/apt/sources_jessie.list /etc/apt/sources.list
+sudo apt-get update
+
+# Kommentar

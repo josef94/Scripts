@@ -1,0 +1,23 @@
+cat > /var/lib/connman/eduroam.config <<EOF
+[service_eduroam]
+Type=wifi
+Name=eduroam
+EAP=peap
+Phase2=MSCHAPV2
+Identity=jboeckle@ntb.ch
+Passphrase=pga888
+
+EOF
+
+echo "do in connmanctl"
+echo "scan wifi"
+echo "services"
+echo "agent on"
+echo "quit"
+
+connmanctl
+
+sudo wpa_action wlan0 reload
+
+# Kommentar
+# new Com installGCC6 installOpenCV README.md unintallProg
