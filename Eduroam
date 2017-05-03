@@ -1,11 +1,13 @@
+read -p"Username 'user@ntb.ch': " user
+read -p"Password: " password
 cat > /var/lib/connman/eduroam.config <<EOF
 [service_eduroam]
 Type=wifi
 Name=eduroam
 EAP=peap
 Phase2=MSCHAPV2
-Identity=jboeckle@ntb.ch
-Passphrase=
+Identity=$user
+Passphrase=$password
 
 EOF
 
